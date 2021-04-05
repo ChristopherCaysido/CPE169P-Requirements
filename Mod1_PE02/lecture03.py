@@ -3,6 +3,7 @@ from kivy.app import App
 from kivy.uix.label import Label
 from kivy.uix.button import Button
 from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.image import Image
 from kivy.uix.camera import Camera
 
 
@@ -39,6 +40,7 @@ class MyApp(App):
         # anothaTwo.add_widget(btn7)
         # anothaTwo.add_widget(btn8)
         # anothaTwo.add_widget(cam2)
+        image = Image()
         root_widget.add_widget(anothaOne)
         root_widget.add_widget(anothaTwo)
         # Label(text=

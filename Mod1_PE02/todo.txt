@@ -1,0 +1,17 @@
+Machine Problem #2
+
+  * Properties of the Widgets 
+  * BoxLayout, FloatLayout, and other layouts
+  * Button: event, event handler (callback function)
+
+
+
+Options:
+  1. python file
+  2. python and .kv file
+
+
+
+Deliverables: 
+  1. MS Word with screengrabs and discussion
+  2. kivy source codes
