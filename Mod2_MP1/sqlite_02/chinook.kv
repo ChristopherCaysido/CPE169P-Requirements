@@ -1,0 +1,18 @@
+<ExecuteSqlForm>:
+    orientation: "vertical"
+    query_input: query_box
+	BoxLayout:
+		TextInput:
+			id: query_box
+			pos_hint: {'top': 1}
+			size_hint_x: .25
+			size_hint_y: .1
+			padding_y:[20,0]
+		Button:
+			text: "Search"
+			size_hint_x: .25
+			size_hint_y: .1
+			pos_hint: {'top': 1}
+			on_press: root.execute_sql()
+    
+
