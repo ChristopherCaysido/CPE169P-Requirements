@@ -2,7 +2,7 @@ import sqlite3
 
 
 class DataAccess(object):
-    db = 'chinook.db'
+    db = r'C:\Users\Chris\Documents\GitHub\CPE169P-Requirements\Mod2_MP1\Mod2_MP1_ToDo_01\chinook.db'
     def __init__(self):
         """ constructor """
         self.conn = sqlite3.connect(self.db)
