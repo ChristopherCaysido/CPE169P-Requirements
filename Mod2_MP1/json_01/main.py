@@ -1,7 +1,7 @@
 import json
 
 # f = open('weather.json',)
-f = open(r'Mod2_MP1\01\manila_weather_2021-04-16.json',)
+f = open(r'C:\Users\Chris\Documents\GitHub\CPE169P-Requirements\Mod2_MP1\json_01\manila_weather_2021-04-16.json')
 data = json.load(f)
 
 # #part 1: display main
