@@ -1,5 +1,13 @@
+from kivy.app import App
+from kivy.uix.widget import Widget
 import json
 
+
+class WeatherDisplay(Widget):
+    pass
+
+class WeatherApp(App):
+    pass
 # f = open('weather.json',)
 f = open(r'C:\Users\Chris\Documents\GitHub\CPE169P-Requirements\Mod2_MP1\json_01\manila_weather_2021-04-16.json')
 data = json.load(f)

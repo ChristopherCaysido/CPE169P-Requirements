@@ -8,13 +8,17 @@ from kivy.storage.jsonstore import JsonStore
 import json
 
 Window.size = (700,80)
-
+ 
+with open('Mod2_MP1\Mod2_MP1_ToDo_02\weather.json','r') as read_file:
+    data = json.load(read_file)
 
 class WeatherDisplay(BoxLayout):
     pass
 
 class WeatherApp(App):
     def build(self):
+        self.icon = data['weather'][0]['icon']
+        self.temp = '{:.2f}'.format(data['main']['temp']-273.15)+u"\N{DEGREE SIGN}"
         weatherapp = WeatherDisplay()
         return weatherapp
 # f = open('weather.json',)

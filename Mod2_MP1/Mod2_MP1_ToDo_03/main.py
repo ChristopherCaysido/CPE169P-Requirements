@@ -1,6 +1,9 @@
+from kivy.uix.textinput import TextInput
 from kivy.storage.jsonstore import JsonStore
 
-
+class JSONStore(BoxLayout):
+    def store(self):
+        
 def show_me(**kwargs):
     print(kwargs)
     for k, v in kwargs.items():

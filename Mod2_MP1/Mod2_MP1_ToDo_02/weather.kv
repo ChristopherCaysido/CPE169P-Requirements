@@ -1,5 +1,5 @@
 #import js json
-#set weather_json JsonStore(r'C:\Users\Chris\Documents\GitHub\CPE169P-Requirements\Mod2_MP1\Mod2_MP1_ToDo_02\weather.json')
+#set data json()
 <WeatherDisplay>:
     minimum_height:40
     canvas.before:
@@ -11,55 +11,36 @@
     BoxLayout:
         orientation:'horizontal'
         AsyncImage:
-            source:'https://img-sharesprites.flaticon.com/pack/4/4185/4185444-mentoring-and-training_3x2.jpg'
+            source:'http://openweathermap.org/img/wn/'+app.icon+'@2x.png'
         Label:
             text_size:self.size
-            text:'[color=#3f3300]Row1[/color]'
+            text:'[color=#000000]'+app.temp+'[/color]'
             markup:True
             halign:'left'
             valign:'top'
-            font_size:50
+            font_size:30
             
-        BoxLayout:
-            orientation:'vertical'
-            padding:0
-            Label:
-                text_size:self.size
-                text:'[color=#3f3300]Row1[/color]'
-                markup:True
-                halign:'left'
-                valign:'top'
-            Label:
-                text_size:self.size
-                text:'[color=#3f3300]Row1[/color]'
-                markup:True
-                halign:'left'
-                valign:'top'
-            Label:
-                text_size:self.size
-                text:'[color=#3f3300]Row1[/color]'
-                markup:True
-                halign:'left'
-                valign:'top'
+    
         BoxLayout:
             orientation:'vertical'
         BoxLayout:
             orientation:'vertical'
             Label:
                 text_size:self.size
-                text:'[color=#3f3300]Row1[/color]'
+                text:'[color=#000000]Manila, Metro Manila[/color]'
+                markup:True
+                halign:'right'
+                valign:'top'
+                font_size:20
+            Label:
+                text_size:self.size
+                text:'[color=#000000]Friday 4:00 PM[/color]'
                 markup:True
                 halign:'right'
                 valign:'top'
             Label:
                 text_size:self.size
-                text:'[color=#3f3300]Row1[/color]'
-                markup:True
-                halign:'right'
-                valign:'top'
-            Label:
-                text_size:self.size
-                text:'[color=#3f3300]Row1[/color]'
+                text:'[color=#000000]Cloudy[/color]'
                 markup:True
                 halign:'right'
                 valign:'top'
