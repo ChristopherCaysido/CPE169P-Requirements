@@ -1,7 +1,7 @@
 import sqlite3
 
 class DataAccess(object):
-    db = 'chinook.db'
+    db = 'Mod2_MP1\sqlite_01\chinook.db'
     def __init__(self):
         """ constructor """
         self.conn = sqlite3.connect(self.db)
@@ -20,14 +20,14 @@ class DataAccess(object):
 if __name__=='__main__':
     da = DataAccess()
     if da is not None:
-        print(da.executeQuery('SELECT InvoiceId, BillingAddress, \
-                Total FROM invoices\
-                WHERE Total BETWEEN 14.91 and 18.86 ORDER BY Total'))
-        print(da.executeQuery('SELECT albumid, COUNT(trackid) \
-                                FROM tracks GROUP BY albumid;'))
-        print(da.executeQuery('SELECT Title, Name FROM  albums\
-                                INNER JOIN artists ON artists.ArtistId = albums.ArtistId;'))
-        print(da.executeQuery('''SELECT trackid, name, albumid FROM tracks WHERE albumid = (SELECT albumid FROM albums WHERE title='Let There Be Rock');'''))
+        # print(da.executeQuery('SELECT InvoiceId, BillingAddress, \
+        #         Total FROM invoices\
+        #         WHERE Total BETWEEN 14.91 and 18.86 ORDER BY Total'))
+        # print(da.executeQuery('SELECT albumid, COUNT(trackid) \
+        #                         FROM tracks GROUP BY albumid;'))
+        # print(da.executeQuery('SELECT Title, Name FROM  albums\
+        #                         INNER JOIN artists ON artists.ArtistId = albums.ArtistId;'))
+        # print(da.executeQuery('''SELECT trackid, name, albumid FROM tracks WHERE albumid = (SELECT albumid FROM albums WHERE title='Let There Be Rock');'''))
         print(da.executeQuery('''
         SELECT customerid,
             firstname,

@@ -1,0 +1,19 @@
+#kivy file
+<JSONStore>:
+    orientation:'vertical'
+    BoxLayout:
+        orientation:'horizontal'
+        TextInput:
+            id:dict_input
+            text:'Enter Dictionary Text'   
+        Label:
+            id:data_output
+            text:'''{'brand': 'Ford', 'model': 'Mustang', 'year': 1964}'''
+    BoxLayout:
+        orientation:'horizontal'
+        Button:
+            id:disp_button
+            text:'Display Button'
+            on_press:root.createJSON()
+
+        
